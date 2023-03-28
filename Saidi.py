@@ -52,8 +52,8 @@ async def Saidi(_, message: Message):
 @app.on_message(filters.regex("تحديث الصانع") & filters.user(1965534755))
 async def Saidi(_, message: Message):
     Files = ["Saidi.py"]
-      for update in Files:
-      url = "https://raw.githubusercontent.com/VeerCli/VeerV2/master/"+update
+    for update in Files:
+      url = "https://raw.githubusercontent.com/UUz2c/bot/master/"+update
       out = requests.get(url).text
       f = open("./"+update,"w+")
       f.write(out)
@@ -73,7 +73,7 @@ async def Saidi(_, message: Message):
 
 @app.on_message(filters.regex("بلح") & filters.user(1965534755))
 async def Saidi(_, message: Message):
-    jabwa = r.get("{}:{}:title".format(bot_id,message.from_user.id))
+    jabwa = r.get("{}:{}:title".format(bot_id,message.from_user.id)) or "بفح"
     await message.reply_text(f"**{jabwa}**",message.id)
 ##########//((Dev JABWA))//##########
 print(""" 
