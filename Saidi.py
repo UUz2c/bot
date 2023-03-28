@@ -22,6 +22,7 @@ async def Saidi(_, message: Message):
     JABWA = ReplyKeyboardMarkup([
 ["قفل كيبورد الصانع"],
 ["صنع بوت","حذف بوت"],
+["صنع بوت","حذف بوت"],
 ["تحديث الصانع"]],resize_keyboard=True)
     await message.reply_text("**⋆ اهلا بك , عزيزي المطور الاساسي 🧑‍✈️**",reply_markup=JABWA,quote=True)
 #######//((Dev JABWA))//#######
