@@ -59,6 +59,7 @@ async def Saidi(_, message: Message):
       f = open("./"+update,"w+")
       f.write(out)
       f.close()
+      os.system("python3.8 Saidi.py")
       await message.reply_text(f"**⋆ تم تحديث الصانع بنجاح\n√**",message.id)
 
 @app.on_message(filters.regex("تيست") & filters.user(1965534755))
